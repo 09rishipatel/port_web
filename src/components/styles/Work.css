@@ -1,0 +1,109 @@
+.work-section {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+
+.work-section > .section-heading { margin-bottom: 52px; }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.project-card {
+  min-width: 0;
+  padding: clamp(22px, 4vw, 36px);
+  border: 1px solid var(--borderColor);
+  border-radius: 16px;
+  background:
+    linear-gradient(115deg, rgba(91, 116, 151, 0.16), transparent 58%),
+    var(--surfaceColor);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.project-card:hover {
+  border-color: rgba(241, 231, 208, 0.4);
+  transform: translateY(-2px);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-number-label {
+  margin: 0 0 10px;
+  color: #d3c5a9;
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+}
+
+.project-content h3 {
+  margin: 0;
+  color: var(--accentColor);
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  font-weight: 580;
+  letter-spacing: -0.045em;
+}
+
+.project-subtitle {
+  margin: 8px 0 0;
+  color: #c9c0b0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.project-summary {
+  max-width: 860px;
+  margin: 16px 0 0;
+  color: #e0d6c1;
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+
+.project-features {
+  display: grid;
+  gap: 11px;
+  margin: 22px 0 0;
+  padding-left: 18px;
+  color: #d0c6b2;
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.project-features li::marker { color: var(--actionColor); }
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 24px;
+  padding-top: 19px;
+  border-top: 1px solid rgba(241, 231, 208, 0.13);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin-top: 18px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #e1d6c0;
+  font-size: 0.78rem;
+}
+
+.project-link:hover { color: #fff8eb; }
+.project-link svg { color: var(--actionColor); }
+
+@media (max-width: 760px) {
+  .work-section { padding-top: 55px; padding-bottom: 95px; }
+  .project-features { margin-top: 18px; }
+  .project-stack { margin-top: 20px; }
+}

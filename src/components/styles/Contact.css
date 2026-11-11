@@ -1,0 +1,74 @@
+.contact-section { padding-top: 35px; padding-bottom: 32px; }
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: clamp(40px, 8vw, 100px);
+  padding: clamp(26px, 5vw, 60px);
+  border: 1px solid rgba(241, 231, 208, 0.19);
+  border-radius: 20px;
+  background:
+    radial-gradient(ellipse at 12% 0%, rgba(91, 116, 151, 0.22), transparent 48%),
+    linear-gradient(130deg, #223555, #192945);
+}
+
+.contact-intro h2 {
+  margin: 22px 0 15px;
+  font-size: clamp(2.5rem, 5.2vw, 4.4rem);
+  line-height: 1.03;
+  letter-spacing: -0.065em;
+  font-weight: 570;
+}
+
+.contact-intro > p:not(.section-kicker) {
+  max-width: 410px;
+  color: #d0c6b2;
+  line-height: 1.7;
+  margin-bottom: 27px;
+}
+
+.contact-details { display: grid; align-content: center; }
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 68px;
+  color: #eee3cc;
+  border-bottom: 1px solid rgba(241,231,208,0.14);
+  font-size: 0.88rem;
+}
+
+a.contact-detail { transition: color 160ms ease; }
+a.contact-detail:hover { color: #fff8eb; }
+.contact-detail > svg:first-child { color: #e2d7bf; font-size: 1.15rem; flex: 0 0 20px; }
+.contact-detail > span:nth-child(2) { min-width: 0; }
+.contact-detail small { display: block; margin-bottom: 4px; color: #b7ad99; font-size: 0.69rem; }
+.contact-detail-arrow { margin-left: auto; color: #c9bfa9; }
+.contact-initials { width: 20px; color: #e2d7bf; font-size: 0.78rem; font-weight: 650; text-align: center; }
+.contact-placeholder { color: #d1c7b1; }
+
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 27px 2px 0;
+  color: #b7ad99;
+  font-size: 0.75rem;
+}
+
+.contact-footer p { margin: 0; }
+.contact-footer > a:last-child { display: inline-flex; align-items: center; gap: 5px; color: #e2d7bf; }
+.footer-mark { color: #f1e7d0; font-weight: 700; font-size: 1.2rem; }
+.footer-mark span { color: #c8b99a; }
+
+@media (max-width: 760px) {
+  .contact-section { padding-top: 20px; }
+  .contact-panel { grid-template-columns: 1fr; gap: 30px; }
+}
+
+@media (max-width: 480px) {
+  .contact-footer { flex-wrap: wrap; }
+  .contact-footer p { order: 1; flex-basis: 100%; }
+}
