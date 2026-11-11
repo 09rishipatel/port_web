@@ -1,4 +1,4 @@
- — Portfolio
+Portfolio
 
 A React, TypeScript, and Vite portfolio highlighting AI/ML, Generative AI, and backend engineering work.
 
