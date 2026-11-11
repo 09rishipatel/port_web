@@ -1,4 +1,4 @@
-# Rishi Ashok Patel — Portfolio
+ — Portfolio
 
 A React, TypeScript, and Vite portfolio highlighting AI/ML, Generative AI, and backend engineering work.
 
@@ -15,8 +15,7 @@ Run `npm run build` for a TypeScript check and production build, and `npm run li
 
 - Resume PDF for the disabled download control.
 
-The GitHub and LinkedIn profile links and all four project repository links are configured.
-The remaining items are intentionally shown as placeholders until the real links are available.
+
 
 ## Attribution and assets
 
